@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @post.name %>
+</p>
+
+<p>
+  <b>About:</b>
+  <%= @post.about.html_safe %>
+</p>
+
+<p>
+  <b>About html:</b>
+  <%= @post.about_html %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @video.embed_code.html_safe %>
+</p>
+
+<p>
+  <b>Url html:</b>
+  <%= @post.url_html %>
+</p>
+
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
